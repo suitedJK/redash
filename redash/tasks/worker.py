@@ -5,7 +5,7 @@ import time
 from redash import statsd_client
 from rq import Worker as BaseWorker, Queue as BaseQueue, get_current_job
 from rq.utils import utcnow
-from rq.timeouts import UnixSignalDeathPenalty, HorseMonitorTimeoutException
+from rq.timeouts import UnixSignalDeathPenalty, HorseMonitorTimeoutException, JobTimeoutException
 from rq.job import Job as BaseJob, JobStatus
 
 
